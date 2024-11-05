@@ -1,0 +1,4 @@
+numpy
+opencv_python
+onnxruntime
+scipy
