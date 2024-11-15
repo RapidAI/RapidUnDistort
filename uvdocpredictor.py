@@ -124,8 +124,8 @@ class UVDocPredictor:
         return np.stack(sampled_tensors, axis=0)
 
 if __name__ == '__main__':
-    img_path = "../img/demo1.jpg"
-    model_path = "../model/model.onnx"
+    img_path = "img/demo1.jpg"
+    model_path = "model/uvdoc.onnx"
     predictor = UVDocPredictor(model_path)
     unwrapped_img = predictor(img_path)
     unwrapped_img = cv2.cvtColor(unwrapped_img, cv2.COLOR_RGB2BGR)

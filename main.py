@@ -8,8 +8,8 @@
 #     def __init__(self, model_path: Optional[str] = None, model_type: str = None):
 #         if model_path is None:
 #             model_path = str(
-#                 root_dir / "model" / "slim.onnx"
-#             )
+#                 root_dir / "model" / "uvdoc.onnx"
+#             # )
 #             # model_type = "slanet-plus"
 #         self.model_type = model_type
 #         self.load_img = LoadImage()
