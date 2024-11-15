@@ -1,11 +1,8 @@
 import cv2
 
-from uvdocpredictor import UVDocPredictor
-if __name__ == '__main__':
-
-    img_path = "img/demo1.png"
-    model_path = "model/uvdoc.onnx"
-    predictor = UVDocPredictor(model_path)
-    unwrapped_img = predictor(img_path)
-    unwrapped_img = cv2.cvtColor(unwrapped_img, cv2.COLOR_RGB2BGR)
-    cv2.imwrite("output/unwarped.png", unwrapped_img)
+from rapid_unwrap.inference import DocUnwrapper
+img_path = "img/demo.jpg"
+doc_unwrapper = DocUnwrapper(img_path)
+unwrapped_img, elapse = doc_unwrapper(img_path)
+print(f"doc unwrap elapse:{elapse}")
+cv2.imwrite("unwarped.png", unwrapped_img)

@@ -1,4 +1,7 @@
 numpy
-opencv_python
+opencv-python
 onnxruntime
 scipy
+pillow
+requests
+tqdm
