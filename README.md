@@ -8,7 +8,7 @@
   <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
   <a href="https://github.com/RapidAI/TableStructureRec/blob/c41bbd23898cb27a957ed962b0ffee3c74dfeff1/LICENSE"><img alt="GitHub" src="https://img.shields.io/badge/license-Apache 2.0-blue"></a>
 
-[English](README_en.md) | 简体中文
+[English](README_en.md) | 简体中文 
 </div>
 
 ### 最近更新
@@ -23,7 +23,7 @@
 
 
 ### 在线体验
-[modelscope](https://www.modelscope.cn/studios/jockerK/DocUnwrap)
+[modelscope](https://www.modelscope.cn/studios/jockerK/DocUnwrap) [huggingface](https://huggingface.co/spaces/Joker1212/RapidUnwrap/tree/main]
 ### 效果展示
 ![res_show.jpg](preview.jpg)
 
