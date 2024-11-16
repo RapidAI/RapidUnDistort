@@ -38,7 +38,7 @@ pip install rapid-unwrap
 ``` python {linenos=table}
 import cv2
 
-from inference import DocUnwrapper
+from rapid_unwrap.inference import DocUnwrapper
 img_path = "img/demo4.jpg"
 doc_unwrapper = DocUnwrapper(img_path)
 unwrapped_img, elapse = doc_unwrapper(img_path)
