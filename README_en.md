@@ -19,7 +19,7 @@
 This repository is used for correcting document distortions and can also alleviate perspective and rotation issues to some extent.
 
 ### Online Experience
-[modelscope](https://www.modelscope.cn/studios/jockerK/DocUnwrap) [huggingface](https://huggingface.co/spaces/Joker1212/RapidUnwrap/tree/main]
+[modelscope](https://www.modelscope.cn/studios/jockerK/DocUnwrap) [huggingface](https://huggingface.co/spaces/Joker1212/RapidUnwrap/tree/main)
 
 ### Effect Demonstration
 ![res_show.jpg](preview.jpg)

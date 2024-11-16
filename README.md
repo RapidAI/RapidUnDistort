@@ -23,7 +23,7 @@
 
 
 ### 在线体验
-[modelscope](https://www.modelscope.cn/studios/jockerK/DocUnwrap) [huggingface](https://huggingface.co/spaces/Joker1212/RapidUnwrap/tree/main]
+[modelscope](https://www.modelscope.cn/studios/jockerK/DocUnwrap) [huggingface](https://huggingface.co/spaces/Joker1212/RapidUnwrap/tree/main)
 ### 效果展示
 ![res_show.jpg](preview.jpg)
 
