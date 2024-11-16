@@ -9,29 +9,27 @@
   <a href="https://github.com/RapidAI/TableStructureRec/blob/c41bbd23898cb27a957ed962b0ffee3c74dfeff1/LICENSE"><img alt="GitHub" src="https://img.shields.io/badge/license-Apache 2.0-blue"></a>
 </div>
 
-### 最近更新
+### Recent Updates
 
 - **2024.11.15**
-    - 完成初版代码，转换 [UVDoc](https://github.com/tanguymagne/UVDoc) 模型为onnx,完善前后处理
+  - Completed the initial version of the code, converted the [UVDoc](https://github.com/tanguymagne/UVDoc) model to onnx, and improved pre- and post-processing.
 
+### Introduction
 
-### 简介
+This repository is used for correcting document distortions and can also alleviate perspective and rotation issues to some extent.
 
-本仓库用于进行文档扭曲的修正，同时能一定程度缓解透视和旋转问题
+### Online Experience
+[modelscope](https://www.modelscope.cn/studios/jockerK/DocUnwrap) [huggingface](https://huggingface.co/spaces/Joker1212/RapidUnwrap/tree/main]
 
-
-### 在线体验
-[modelscope](https://www.modelscope.cn/studios/jockerK/DocUnwrap)
-### 效果展示
+### Effect Demonstration
 ![res_show.jpg](preview.jpg)
 
-### 安装
+### Installation
 ``` python {linenos=table}
-# 建议使用清华源安装 https://pypi.tuna.tsinghua.edu.cn/simple
 pip install rapid-unwrap
 ```
 
-### 快速使用
+### Quick Start
 
 ``` python {linenos=table}
 import cv2
@@ -46,19 +44,18 @@ cv2.imwrite("unwarped.png", unwrapped_img)
 ```
 
 
-### 致谢
+### Acknowledgments
 
 [UVDoc](https://github.com/tanguymagne/UVDoc)
 
 
-### 贡献指南
+### Contribution Guidelines
 
-欢迎提交请求。对于重大更改，请先打开issue讨论您想要改变的内容。
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-有其他的好建议和集成场景，作者也会积极响应支持
+If you have other good suggestions or integration scenarios, the author will actively respond and support them.
 
-### 开源许可证
 
-该项目采用[Apache 2.0](https://github.com/RapidAI/TableStructureRec/blob/c41bbd23898cb27a957ed962b0ffee3c74dfeff1/LICENSE)
-开源许可证。
+### Open Source License
 
+This project is licensed under the [Apache 2.0](https://github.com/RapidAI/TableStructureRec/blob/c41bbd23898cb27a957ed962b0ffee3c74dfeff1/LICENSE) license.
