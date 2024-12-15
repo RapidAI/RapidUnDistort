@@ -1,9 +1,9 @@
-name: Push rapid_unwrap to pypi
+name: Push rapid_undistorted to pypi
 
 on:
   push:
     tags:
-      - rapid_unwrap_v*
+      - rapid_undistort_v*
 
 jobs:
   UnitTesting:

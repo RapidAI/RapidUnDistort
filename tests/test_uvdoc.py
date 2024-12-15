@@ -12,11 +12,11 @@ test_file_dir = cur_dir / "test_files"
 
 @pytest.mark.parametrize(
     "img_path",
-    [("demo2.png")],
+    [("demo1.png")],
 )
 def test_input_normal(img_path):
-    from rapid_unwrap.inference import DocUnwrapper
+    from rapid_undistorted.inference import InferenceEngine
     img_path = test_file_dir / img_path
-    doc_unwrapper = DocUnwrapper()
-    unwrapped_img, elapse = doc_unwrapper(img_path)
+    engine = InferenceEngine()
+    unwrapped_img, elapse = engine(img_path,["(unwrap, UVDoc)"])
 

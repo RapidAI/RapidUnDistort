@@ -1,0 +1,38 @@
+tasks:
+  unwrap:
+    models:
+      - type: "UVDoc"
+        path:
+        use_cuda: false
+        use_dml: false
+
+  unshadow:
+    models:
+      - type: "GCDnet"
+        sub_models:
+          - type: "GCDnet"
+            path:
+            use_cuda: false
+            use_dml: false
+          - type: "DRnet"
+            path:
+            use_cuda: false
+            use_dml: false
+
+  binarize:
+    models:
+      - type: "UnetCnn"
+        path:
+        use_cuda: false
+        use_dml: false
+
+  unblur:
+    models:
+      - type: "OpenCvBilateral"
+        path:
+      - type: "NAFDPM"
+        path:
+        use_cuda: false
+        use_dml: false
+
+

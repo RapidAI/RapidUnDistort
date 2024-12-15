@@ -1,4 +1,4 @@
-
+import time
 
 import cv2
 import numpy as np
@@ -15,11 +15,13 @@ class UVDocPredictor:
         self.grid_size = [45, 31]
 
     def __call__(self, img):
+        s = time.time()
         size = img.shape[:2][::-1]
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB).astype(np.float32) / 255
         inp = self.preprocess(img.copy())
         outputs, _ = self.session([inp])
-        return self.postprocess(img, size, outputs)
+        elapse = time.time() - s
+        return self.postprocess(img, size, outputs),elapse
 
     def preprocess(self, img):
         img = cv2.resize(img, self.img_size).transpose(2, 0, 1)
@@ -40,7 +42,7 @@ class UVDocPredictor:
         unwarped_img = self.grid_sample(warped_img, upsampled_grid)
 
         # 将结果转换回原始格式
-        return (unwarped_img[0].transpose(1, 2, 0) * 255).astype(np.uint8)
+        return unwarped_img[0].transpose(1, 2, 0) * 255
 
     def interpolate(self, input_tensor, size, align_corners=True):
         """
