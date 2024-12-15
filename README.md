@@ -66,9 +66,11 @@ cv2.imwrite("result.png", output_img)
 
 ### 参数说明
 #### 初始化参数
-支持传入一个config配置文件，声明需要的task类型和对应的模型，以及path
+支持传入一个config配置文件，声明需要的task类型和对应的模型，以及model path
+```python
 config_path = "configs/config.yaml"
 engine = InferenceEngine(config_path)
+```
 ```yaml
 tasks:
   unwrap:
