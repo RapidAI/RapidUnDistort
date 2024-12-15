@@ -15,7 +15,7 @@ def read_txt(txt_path: Union[Path, str]) -> List[str]:
     return data
 
 
-MODULE_NAME = "rapid_unwrap"
+MODULE_NAME = "rapid_undistorted"
 
 obtainer = GetPyPiLatestVersion()
 try:

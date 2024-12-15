@@ -1,8 +1,10 @@
 import cv2
+from rapid_undistorted.inference import InferenceEngine
 
-from rapid_unwrap.inference import DocUnwrapper
-img_path = "img/demo.jpg"
-doc_unwrapper = DocUnwrapper()
-unwrapped_img, elapse = doc_unwrapper(img_path)
-print(f"doc unwrap elapse:{elapse}")
-cv2.imwrite("unwarped.png", unwrapped_img)
+if __name__ == '__main__':
+
+    img_path = "tests/test_files/demo1.jpg"
+    engine = InferenceEngine()
+    unwrapped_img, elapse = engine(img_path, ["unwrap", "unshadow", ("unblur", "OpenCvBilateral")])
+    print(f"doc unwrap elapse:{elapse}")
+    cv2.imwrite("unwarped.png", unwrapped_img)
