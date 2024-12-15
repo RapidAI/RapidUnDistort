@@ -1,6 +1,6 @@
 <div align="center">
   <div align="center">
-    <h1><b>📊RapidUnWrap</b></h1>
+    <h1><b>📊RapidUndistort</b></h1>
   </div>
   <a href=""><img src="https://img.shields.io/badge/Python->=3.8,<3.13-aff.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/OS-Linux%2C%20Mac%2C%20Win-pink.svg"></a>
