@@ -17,7 +17,7 @@ class UVDocPredictor:
     def __call__(self, img):
         s = time.time()
         size = img.shape[:2][::-1]
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB).astype(np.float32) / 255
+        img = img.astype(np.float32) / 255
         inp = self.preprocess(img.copy())
         outputs, _ = self.session([inp])
         elapse = time.time() - s
